@@ -33,8 +33,7 @@ then
 	tune_control play -t 1
 else
 	echo "[i] no microSD card found"
-	# Play SOS
-	tune_control play -t 2
+	tune_control play error
 fi
 
 #

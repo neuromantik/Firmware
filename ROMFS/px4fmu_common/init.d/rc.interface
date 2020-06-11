@@ -77,8 +77,7 @@ then
 
 		if ! mkblctrl $MKBLCTRL_ARG
 		then
-			# Error tune.
-			tune_control play -t 2
+			tune_control play error
 		fi
 	fi
 
@@ -86,8 +85,7 @@ then
 	then
 		if ! pwm_out_sim start -m $OUTPUT_MODE
 		then
-			# Error tune.
-			tune_control play -t 2
+			tune_control play error
 		fi
 	fi
 
@@ -96,8 +94,7 @@ then
 		if ! $OUTPUT_CMD mode_$FMU_MODE
 		then
 			echo "$OUTPUT_CMD start failed" >> $LOG_FILE
-			# Error tune.
-			tune_control play -t 2
+			tune_control play error
 		fi
 	fi
 

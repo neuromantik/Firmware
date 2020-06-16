@@ -240,6 +240,7 @@ fi
 
 dataman start
 replay tryapplyparams
+battery_simulator start
 simulator start -c $simulator_tcp_port
 tone_alarm start
 rc_update start

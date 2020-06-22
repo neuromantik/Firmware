@@ -42,7 +42,8 @@ function spawn_model() {
 
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]
 then
-	echo "Usage: $0 [-n <num_vehicles>] [-m <vehicle_model>]"
+	echo "Usage: $0 [-n <num_vehicles>] [-m <vehicle_model>] [-w <world>] [-s <script>]"
+	echo "-s flag is used to script spawning vehicles e.g. $0 -s iris:3, plane:2"
 	exit 1
 fi
 

@@ -97,7 +97,7 @@ else
 	for target in ${SCRIPT}; do
 		echo ${target}
 		target_vehicle="${target%:*}"
-		target_number=$(echo ${target} | cut -d ":" -f 2)
+		target_number="${target#*:}"
 
 		if [ $n -gt 255 ]
 		then
